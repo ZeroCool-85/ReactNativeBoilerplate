@@ -1,5 +1,7 @@
 # ReactNativeBoilerplate
 
+Already includes redux, react-navigation and preprated sagas packages
+
 ## Install and running the app
 
 ```javascript
