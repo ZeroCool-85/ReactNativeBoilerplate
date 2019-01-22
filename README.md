@@ -1,6 +1,11 @@
 # ReactNativeBoilerplate
 
-Already includes redux, react-navigation and preprated sagas packages
+Already included:
+* redux
+* react-navigation
+* react-native-config
+* preprated for sagas install
+
 
 ## Install and running the app
 
