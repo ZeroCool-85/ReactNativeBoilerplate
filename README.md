@@ -4,7 +4,7 @@ Already included:
 * redux
 * react-navigation
 * react-native-config
-* preprated for sagas install
+* pre prepared for sagas install
 
 
 ## Install and running the app
