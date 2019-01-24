@@ -109,6 +109,7 @@ async function setUpGit() {
 
 async function addGitRepo() {
     process.stdout.write(`${colors.fg.Magenta}`)
+    await clearStructure()
     const val = await questionRemoteRepo()
     if (val === 'y' || val === 'Y' || val === 'yes' || val === 'Yes' || val === '') {
         process.stdout.write(`${colors.fg.Cyan}Connect remote repository...`)
@@ -118,7 +119,6 @@ async function addGitRepo() {
             process.stderr.write(`${colors.fg.Red}\nno valid Url!\n`)
             process.exit(1)
         } else {
-            await clearStructure()
             execSync(`git init && git add . && git commit -m "Initial commit" && git remote add origin ${repoUrl}`, {stdio: 'inherit'})
             process.stdout.write(`${colors.fg.Green}\nRepository connected!`)
             process.stdout.write(`${colors.fg.Green}\nYour done!\n`)
