@@ -131,6 +131,7 @@ async function addGitRepo() {
 }
 
 async function clearStructure() {
+    const shell = require('shelljs')
     shell.rm('-rf', 'scripts/')
     shell.rm('-rf', 'README.md')
     execSync("Happy programming!!! > README.md")
