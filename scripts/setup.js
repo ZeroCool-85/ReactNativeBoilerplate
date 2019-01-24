@@ -118,6 +118,7 @@ async function addGitRepo() {
             process.stderr.write(`${colors.fg.Red}\nno valid Url!\n`)
             process.exit(1)
         } else {
+            await clearStructure()
             execSync(`git init && git add . && git commit -m "Initial commit" && git remote add origin ${repoUrl}`, {stdio: 'inherit'})
             process.stdout.write(`${colors.fg.Green}\nRepository connected!`)
             process.stdout.write(`${colors.fg.Green}\nYour done!\n`)
@@ -127,4 +128,10 @@ async function addGitRepo() {
         process.stdout.write(`${colors.fg.Green}\nReady to go!\n`)
         process.exit(0)
     }
+}
+
+async function clearStructure() {
+    shell.rm('-rf', 'scripts/')
+    shell.rm('-rf', 'README.md')
+    execSync("Happy programming!!! > README.md")
 }
