@@ -134,5 +134,5 @@ async function clearStructure() {
     const shell = require('shelljs')
     shell.rm('-rf', 'scripts/')
     shell.rm('-rf', 'README.md')
-    execSync('echo "Hsappy programming!!!" > README.md')
+    execSync('echo "Happy programming!!!" > README.md')
 }
