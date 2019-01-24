@@ -8,20 +8,15 @@ Already included:
 * pre prepared for sagas install
 
 
-## Install and running the app
+## Install
 
 ```javascript
 git clone https://github.com/ZeroCool-85/ReactNativeBoilerplate.git
-cd ReactNativeBoilerplate
-yarn install
-react-native run-ios
+cd ReactNativeBoilerplate && yarn run setup
 ```
 
-## Rename
-
-If you want to rename your App you have to install react-native-rename
+## Running
 
 ```javascript
-npm install react-native-rename -g
-react-native-rename AwesomeApp
+react-native run-ios
 ```
